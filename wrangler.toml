@@ -1,0 +1,15 @@
+name = "gastos-bot"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+
+# --- Armazenamento KV (para controlar a análise semanal) ---
+# O id abaixo você obtém rodando:
+#   wrangler kv namespace create GASTOS_KV
+# Ele vai imprimir um id; cole esse id no campo abaixo.
+[[kv_namespaces]]
+binding = "GASTOS_KV"
+id = "COLE_AQUI_O_ID_DO_KV"
+
+# Segredos (NÃO vão aqui — configurados via `wrangler secret put`):
+#   TELEGRAM_TOKEN, GEMINI_API_KEY, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET,
+#   GOOGLE_REFRESH_TOKEN, SPREADSHEET_ID, VAULT_FOLDER_ID, ALLOWED_CHAT_ID

@@ -1,0 +1,12 @@
+# Copie para .dev.vars (dev local) e configure os mesmos nomes como secrets em produção:
+#   wrangler secret put TELEGRAM_TOKEN   (repita para cada um)
+# .dev.vars está no .gitignore. Nunca suba valores reais.
+
+TELEGRAM_TOKEN="token-do-botfather"
+GEMINI_API_KEY="key-do-google-ai-studio"
+GOOGLE_CLIENT_ID="client-id-oauth"
+GOOGLE_CLIENT_SECRET="client-secret-oauth"
+GOOGLE_REFRESH_TOKEN="refresh-token-oauth"
+SPREADSHEET_ID="id-da-planilha-na-url-do-sheets"
+VAULT_FOLDER_ID="id-da-pasta-do-drive-onde-vai-a-nota"
+ALLOWED_CHAT_ID="seu-chat-id-do-telegram"

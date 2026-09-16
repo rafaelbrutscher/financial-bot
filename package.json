@@ -1,0 +1,16 @@
+{
+  "name": "gastos-bot",
+  "version": "1.0.0",
+  "description": "Bot de Telegram que registra gastos por texto ou áudio: Gemini extrai os dados, grava no Google Sheets e atualiza uma nota no Obsidian via Drive. Roda em Cloudflare Workers.",
+  "main": "src/index.js",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "test": "node test.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.90.0"
+  }
+}
